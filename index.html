@@ -12,24 +12,64 @@
             padding: 0;
         }
         
-        p, a {
+        p {
             font-family: "Arial", serif;
             font-size: 14px;
             color: white;
         }
 
+		a {
+        	color: white;
+            text-decoration: none;
+        }
+
         body {
             display: flex;
-            background-color: #000000;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #444, #000);
             text-align: center;
+            color: white;
+            overflow: hidden;
         }
     </style>
+     <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 28, 2020 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance > 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "0d 0h 0m 0s";
+      }
+    }, 1000);
+    </script>
 </head>
 <body>
     <div>
-      <p>Powering education through AI<br><br>(c) 2025 Icelite<br><br><a href="mailto:contact@icelite.net">Contact Us</a></p>
+    <p id="demo">0d 0h 0m 0s</p>
+    <p><a href="mailto:contact@icelite.net">© 2025 Icelite</a></p>
     </div>
 </body>
 </html>
