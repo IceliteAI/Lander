@@ -3,172 +3,249 @@
   <title>Home | Icelite</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+<body>
 <center>
   <br>
   <img src="https://raw.githubusercontent.com/IceliteAI/Lander/refs/heads/main/cdn/img/emblem.png" alt="Icelite Logo" width="65" height="65">
-  <br><br><br>
+  <br><br><br><br>
 </center>
-<h2>Vector the Explorer</h2>
-<h3>Made in collaboration with <a href="https://anki.bot/">Anki</a><br><br>Vector the Explorer is a new piece of software for the Anki Vector robot. More information coming soon.</h3>
-  <br>
-  <h2>Configure 2.0</h2>
-<h3>Made in collaboration with <a href="https://anki.bot/">Anki</a><br><br>Configure 2.0 allows the Vector SDK setup process to work again by using the Stratus platform instead of the deprecated Anki Cloud system.</h3>
-  <br>
-<h2>Smartify</h2>
-<h3>Smartify is designed specifically for <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">Ultraviolet-based</a> proxies to deliver unrivaled speed, reliability, and performance. With its cutting-edge optimization, Smartify enhances the browsing experience while maintaining robust privacy and security. Available exclusively upon request.</h3>
-  <br>
-  <center>
-    <br>
-    <a href="mailto:contact@icelite.net" class="btn-glitch-fill">
-      <span class="text">// WORK WITH US</span><span class="text-decoration"> _</span><span class="decoration">⇒</span>
-    </a><br><br>
-<h3>Collaborated With</h3>
-    <a href="https://anki.bot/"><img src="https://raw.githubusercontent.com/IceliteAI/Lander/refs/heads/main/cdn/img/anki.png" alt="Digital Dream Labs Logo" width="100"></a><bl>.....</bl><a href="https://agrnyc.com/"><img src="https://raw.githubusercontent.com/IceliteAI/Lander/refs/heads/main/cdn/img/agr.png" alt="AGR Logo" width="100"></a>
-  </center>
+
+<div class="collapsible">
+  <button type="button" class="collapsible-header">
+    <h2>Vector the Explorer</h2>
+    <span class="icon">+</span>
+  </button>
+  <div class="collapsible-content">
+    <h3>Made in collaboration with <a href="https://anki.bot/">Anki</a><br><br>Vector the Explorer is a new piece of software for the Anki Vector robot. More information coming soon.</h3>
+  </div>
+</div>
+
+<div class="collapsible">
+  <button type="button" class="collapsible-header">
+    <h2>Configure 2.0</h2>
+    <span class="icon">+</span>
+  </button>
+  <div class="collapsible-content">
+    <h3>Made in collaboration with <a href="https://anki.bot/">Anki</a><br><br>Configure 2.0 allows the Vector SDK setup process to work again by using the Stratus platform instead of the deprecated Anki Cloud system.</h3>
+  </div>
+</div>
+
+<div class="collapsible">
+  <button type="button" class="collapsible-header">
+    <h2>Smartify</h2>
+    <span class="icon">+</span>
+  </button>
+  <div class="collapsible-content">
+    <h3>Smartify is designed specifically for <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">Ultraviolet-based</a> proxies to deliver unrivaled speed, reliability, and performance. With its cutting-edge optimization, Smartify enhances the browsing experience while maintaining robust privacy and security. Available exclusively upon request.</h3>
+  </div>
+</div>
+
+<center>
   <br><br>
-    <center>
+  <a href="mailto:contact@icelite.net" class="btn-glitch-fill">
+    <span class="text">// WORK WITH US</span><span class="text-decoration"> _</span><span class="decoration">⇒</span>
+  </a><br><br>
+  <h3>Collaborated With</h3>
+  <a href="https://anki.bot/"><img src="https://raw.githubusercontent.com/IceliteAI/Lander/refs/heads/main/cdn/img/anki.png" alt="Digital Dream Labs Logo" width="100"></a><bl>.....</bl><a href="https://agrnyc.com/"><img src="https://raw.githubusercontent.com/IceliteAI/Lander/refs/heads/main/cdn/img/agr.png" alt="AGR Logo" width="100"></a>
+</center>
+<br><br>
+<center>
   <p>© 2025 Icelite<br><br><smallp><a href="http://api.icelite.net/api/connect/check.txt">Check API connectivity</a></smallp><br><br><smallp>Disclaimer: Icelite has partnered with Anki and AGR on select projects. All trademarks, logos, and brand names featured on this website are the property of their respective owners and are used for reference purposes only.</smallp></p>
-      </center>
-</body>
- <style>
+</center>
+
+<style>
   @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-    body{
-      background-color: black;
-      color: white;
-      padding: 35px;
-      padding-top: 35px;
+  
+  body {
+    background-color: black;
+    color: white;
+    padding: 35px;
+    padding-top: 35px;
+  }
+
+  /* Collapsible styles */
+  .collapsible {
+    margin-bottom: 20px;
+  }
+
+  .collapsible-header {
+  	color: white;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .collapsible-header:focus {
+    outline: none;
+  }
+
+  .icon {
+    color: white;
+    font-size: 24px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    min-width: 20px;
+  }
+
+  .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .collapsible-content.active {
+    max-height: 500px;
+  }
+
+  bl {
+    text-decoration: none;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #66ff66;
+  }
+
+  awh {
+    text-decoration: underline;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: white;
+  }
+
+  smallp {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: white;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+
+  p {
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+
+  [class*="btn-glitch-"] {
+    display: inline-block;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 13px;
+    min-width: 175px;
+    line-height: 1.5em;
+    white-space: no-wrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .text,
+  .decoration {
+    display: inline-block;
+  }
+
+  .decoration {
+    display: inline-block;
+    float: right;
+  }
+
+  [class*="btn-glitch-"]:hover,
+  [class*="btn-glitch-"]:focus {
+    animation-name: glitch;
+    animation-duration: 0.2s;
+    background-color: #66ff66;
+    color: black;
+    border: 1px solid #66ff66;
+  }
+
+  [class*="btn-glitch-"]:hover .text-decoration,
+  [class*="btn-glitch-"]:focus .text-decoration,
+  [class*="btn-glitch-"]:hover .decoration,
+  [class*="btn-glitch-"]:focus .decoration {
+    animation-name: blink;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+  }
+
+  [class*="btn-glitch-"]:active {
+    background: none;
+    color: yellow;
+  }
+
+  [class*="btn-glitch-"]:active .text-decoration,
+  [class*="btn-glitch-"]:active .decoration {
+    animation-name: none;
+  }
+
+  @keyframes glitch {
+    25% {
+      background-color: red;
+      transform: translateX(-10px);
+      letter-spacing: 10px;
     }
-   bl{
-     text-decoration: none;
-     font-family: 'Bricolage Grotesque', sans-serif;
-     color: black;
-   }
-    a{
-      text-decoration: none;
-      font-family: 'Bricolage Grotesque', sans-serif;
-      color: #66ff66;
+    35% {
+      background-color: green;
+      transform: translate(10px);
     }
-    awh{
-      text-decoration: underline;
-      font-family: 'Bricolage Grotesque', sans-serif;
-      color: white;
+    59% {
+      opacity: 0;
     }
-   smallp{
-     font-family: 'Bricolage Grotesque', sans-serif;
-     color: white;
-     font-size: 12px;
-   }
-    h2{
-      font-family: 'Bricolage Grotesque', sans-serif;
+    60% {
+      background-color: blue;
+      transform: translate(-10px);
+      filter: blur(5px);
     }
-    h3{
-      font-family: 'Bricolage Grotesque', sans-serif;
+    100% {
+      background-color: yellow;
+      blur: (5px);
     }
-    p{
-      font-family: 'Bricolage Grotesque', sans-serif;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
     }
+  }
 
-   [class*="btn-glitch-"] {
-     display: inline-block;
-     font-family: 'Bricolage Grotesque', sans-serif;
-     border: 1px solid white;
-     color: white;
-     padding: 10px 13px;
-     min-width: 175px;
-     line-height: 1.5em;
-     white-space: no-wrap;
-     text-transform: uppercase;
-     cursor: pointer;
-     border-radius: 15px;
+  @keyframes shrink {
+    100% {
+      width: 10%;
+    }
+  }
+</style>
 
-     .text,
-     .decoration {
-       display: inline-block;
-     }
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const collapsibles = document.querySelectorAll('.collapsible-header');
+  
+  collapsibles.forEach(button => {
+    button.addEventListener('click', function() {
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('.icon');
+      
+      // Toggle active class
+      content.classList.toggle('active');
+      
+      // Update icon
+      icon.textContent = content.classList.contains('active') ? '−' : '+';
+    });
+  });
+});
+</script>
 
-     .decoration {
-       display: inline-block;
-       float: right;
-     }
-
-     &:hover,
-     &:focus {
-       animation-name: glitch;
-       animation-duration: 0.2s;
-       background-color: #66ff66;
-       color: black;
-       border: 1px solid #66ff66;
-
-       .text-decoration {
-         animation-name: blink;
-         animation-duration: 0.1s;
-         animation-iteration-count: infinite;
-       }
-
-       .decoration {
-         animation-name: blink;
-         animation-duration: 0.1s;
-         animation-iteration-count: infinite;
-       }
-     }
-
-     &:active {
-       background: none;
-       color: yellow;
-
-       .text-decoration {
-         animation-name: none;
-       }
-
-       .decoration {
-         animation-name: none;
-       }
-
-       :before,
-       :after {
-         display: none;
-       }
-     }
-   }
-
-   @keyframes glitch {
-     25% {
-       background-color: red;
-       transform: translateX(-10px);
-       letter-spacing: 10px;
-     }
-
-     35% {
-       background-color: green;
-       transform: translate(10px);
-     }
-
-     59% {
-       opacity: 0;
-     }
-
-     60% {
-       background-color: blue;
-       transform: translate(-10px);
-       filter: blur(5px);
-     }
-
-     100% {
-       background-color: yellow;
-       blur: (5px);
-     }
-   }
-
-   @keyframes blink {
-     50% {
-       opacity: 0;
-     }
-   }
-
-   @keyframes shrink {
-     100% {
-       width: 10%;
-     }
-   }
-
-  </style>
+</body>
+</html>
