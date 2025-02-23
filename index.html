@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -238,9 +237,10 @@ a:hover {
     <p>Available commands:</p>
     <p>- projects : List all projects</p>
     <p>- contact : Show contact information</p>
-    <p>- about : Display collaborators</p>
+    <p>- collabs : Display collaborators</p>
+    <p>- extras : API and copyright</p>
     <p>- clear : Clear terminal</p>
-      
+    <br>
     <div id="output"></div>
       
     <div class="command-wrapper">
@@ -254,33 +254,35 @@ a:hover {
     const output = document.getElementById('output');
     
     const commands = {
-      projects: `
-[PROJECT 1] Vector the Explorer
------------------------------
+      projects: `View projects
+- p1 : Vector the Explorer info
+- p2 : Configure 2.0 info
+- p3 : Smartify info
+`,
+      p1: `[VECTOR THE EXPLORER]
+--------------
 Made in collaboration with Anki
 Vector the Explorer is a new piece of software for the Anki Vector robot. More information coming soon.
-
-[PROJECT 2] Configure 2.0
-------------------------
+`,
+      p2: `[CONFIGURE 2.0]
+--------------
 Made in collaboration with Anki
 Configure 2.0 allows the Vector SDK setup process to work again by using the Stratus platform instead of the deprecated Anki Cloud system.
-
-[PROJECT 3] Smartify
--------------------
+`,
+      p3: `[SMARTIFY]
+--------------
 Smartify is designed specifically for Ultraviolet-based proxies to deliver unrivaled speed, reliability, and performance. With its cutting-edge optimization, Smartify enhances the browsing experience while maintaining robust privacy and security. Available exclusively upon request.
 `,
-      contact: `
-[CONTACT]
+      contact: `[CONTACT]
 --------------
 - Email (contact@icelite.net)
 `,
-      about: `
-[COLLABORATORS]
+      collabs: `[COLLABORATORS]
 --------------
 - Anki (https://anki.bot/)
 - AGR (https://agrnyc.com/)
-
-[API]
+`,
+      extras: `[API]
 --------------
 - http://api.icelite.net/api/connect/check.txt
 
@@ -292,17 +294,18 @@ Disclaimer: Icelite has partnered with Anki and AGR on select projects. All trad
       help: `Available commands:
 - projects : List all projects
 - contact : Show contact information
-- about : Display collaborators
+- collabs : Display collaborators
+- extras : API and copyright
 - clear : Clear terminal`
     };
 
     // Improved boot sequence
     const bootLines = [
       "Initializing system...",
-      "Loading kernel modules... OK",
       "Mounting file systems... OK",
-      "Starting network services... OK",
+      "Loading kernel modules... OK",
       "Loading Terminal v1.0.0... OK",
+      "Starting network services... OK",
       "",
       "Welcome to Icelite.net"
     ];
